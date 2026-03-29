@@ -7,139 +7,61 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:'Poppins',sans-serif;
-      background:#050505;
-      color:#fff;
-      overflow-x:hidden;
-    }
-
-    /* Background crash effect */
-    body::before{
-      content:"";
-      position:fixed;
-      top:0;left:0;width:100%;height:100%;
-      background:linear-gradient(transparent 95%, rgba(255,0,0,0.15) 100%),
-                 repeating-linear-gradient(
-                   to bottom,
-                   rgba(255,0,0,0.05),
-                   rgba(255,0,0,0.05) 2px,
-                   transparent 2px,
-                   transparent 6px
-                 );
-      animation: crashMove 6s linear infinite;
-      z-index:-1;
-    }
-
-    @keyframes crashMove{
-      0%{background-position:0 0}
-      100%{background-position:0 200px}
-    }
-
-    header{
-      padding:100px 20px;
-      text-align:center;
-    }
-
-    h1{
-      font-size:56px;
-      margin:0;
-      color:#ff3b3b;
-      text-shadow:0 0 20px rgba(255,0,0,0.8);
-      animation:pulse 2s infinite;
-    }
-
-    @keyframes pulse{
-      0%{opacity:1}
-      50%{opacity:0.6}
-      100%{opacity:1}
-    }
-
+    body{margin:0;font-family:'Poppins',sans-serif;background:#050505;color:#fff;line-height:1.6}
+    header{padding:100px 20px;text-align:center;background:radial-gradient(circle,#111,#000)}
+    h1{font-size:56px;margin:0;color:#ff3b3b;text-shadow:0 0 20px rgba(255,0,0,0.8)}
+    h2{color:#ff3b3b;margin-bottom:20px}
     p{color:#bbb}
-
-    .btn{
-      display:inline-block;
-      margin:8px;
-      padding:12px 25px;
-      border-radius:30px;
-      text-decoration:none;
-      font-weight:600;
-    }
-
-    .primary{
-      background:#ff3b3b;
-      color:#000;
-      box-shadow:0 0 15px rgba(255,0,0,0.7);
-    }
-
-    .secondary{
-      border:1px solid #ff3b3b;
-      color:#ff3b3b;
-    }
-
-    section{
-      padding:70px 20px;
-      max-width:1100px;
-      margin:auto;
-    }
-
-    h2{color:#ff3b3b}
-
-    .card{
-      background:#0d0d0d;
-      padding:25px;
-      border-radius:14px;
-      margin-bottom:20px;
-      box-shadow:0 0 20px rgba(255,0,0,0.2);
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:20px;
-    }
-
-    /* fake falling chart */
-    .chart{
-      width:100%;
-      height:150px;
-      background:linear-gradient(to bottom right, transparent 40%, red 100%);
-      clip-path:polygon(0 0,100% 20%,80% 40%,60% 50%,40% 70%,20% 85%,0 100%);
-      opacity:0.4;
-      margin-top:20px;
-      animation:drop 3s ease-in-out infinite;
-    }
-
-    @keyframes drop{
-      0%{transform:translateY(0)}
-      50%{transform:translateY(10px)}
-      100%{transform:translateY(0)}
-    }
-
-    footer{
-      text-align:center;
-      padding:40px;
-      background:#0d0d0d;
-      color:#666;
-    }
+    .container{max-width:1100px;margin:auto;padding:60px 20px}
+    .btn{display:inline-block;margin:10px;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:600}
+    .primary{background:#ff3b3b;color:#000}
+    .secondary{border:1px solid #ff3b3b;color:#ff3b3b}
+    .card{background:#0d0d0d;padding:25px;border-radius:14px;margin-bottom:20px;box-shadow:0 0 20px rgba(255,0,0,0.15)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+    ul{padding-left:20px}
+    footer{text-align:center;padding:40px;background:#0d0d0d;color:#666}
   </style>
 </head>
 <body>
 
 <header>
   <h1>$Leconom</h1>
-  <p>Global Economic Crisis Token</p>
-  <p>Market is bleeding. Are you ready?</p>
-  <a href="#" class="btn primary">BUY BEFORE CRASH</a>
-  <a href="#" class="btn secondary">VIEW CHART</a>
-  <div class="chart"></div>
+  <p>Global Economic Crisis Meme Token</p>
+  <p>Inflation rising. Markets falling. Attention shifting.</p>
+  <a href="#" class="btn primary">Buy Token</a>
+  <a href="#" class="btn secondary">View Chart</a>
+  <p>Contract: <strong>PASTE_CA_HERE</strong></p>
 </header>
 
+<div class="container">
+
 <section>
-  <h2>About</h2>
+  <h2>About $Leconom</h2>
   <div class="card">
-    <p>$Leconom is a meme token built on crisis narrative. It reflects inflation, recession, and global instability through viral energy.</p>
+    <p>$Leconom is a meme-driven cryptocurrency built on Solana via Pump.fun. It reflects the reality of global economic instability through narrative, humor, and viral community energy.</p>
+    <p>In a time where inflation rises and uncertainty dominates markets, $Leconom captures attention and transforms it into a digital movement.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Core Narrative</h2>
+  <div class="card">
+    <p>$Leconom is not about utility. It is about attention, timing, and narrative.</p>
+    <ul>
+      <li>Economic fear becomes meme energy</li>
+      <li>Market panic becomes viral momentum</li>
+      <li>Community belief becomes price action</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Token Overview</h2>
+  <div class="grid">
+    <div class="card"><strong>Name</strong><br>$Leconom</div>
+    <div class="card"><strong>Ticker</strong><br>LECONOM</div>
+    <div class="card"><strong>Blockchain</strong><br>Solana</div>
+    <div class="card"><strong>Launch</strong><br>Pump.fun</div>
   </div>
 </section>
 
@@ -147,22 +69,58 @@
   <h2>Tokenomics</h2>
   <div class="card">
     <ul>
-      <li>Fair Launch</li>
-      <li>0% Tax</li>
-      <li>Locked Liquidity</li>
+      <li>Fair Launch – no presale</li>
+      <li>0% Buy/Sell Tax</li>
+      <li>Liquidity Locked</li>
+      <li>Community Driven Growth</li>
     </ul>
   </div>
 </section>
 
 <section>
-  <h2>Warning</h2>
-  <div class="card">
-    <p>Extreme volatility. No guarantees. This is war in the market.</p>
+  <h2>Why $Leconom?</h2>
+  <div class="grid">
+    <div class="card"><strong>Viral Narrative</strong><br>Built around global crisis sentiment</div>
+    <div class="card"><strong>Attention Economy</strong><br>Designed for social media spread</div>
+    <div class="card"><strong>Early Opportunity</strong><br>Position before mainstream attention</div>
+    <div class="card"><strong>Community Power</strong><br>Growth depends on holders</div>
   </div>
 </section>
 
+<section>
+  <h2>Roadmap</h2>
+  <div class="card">
+    <p><strong>Phase 1:</strong> Launch, memes, early holders</p>
+    <p><strong>Phase 2:</strong> Social expansion & community growth</p>
+    <p><strong>Phase 3:</strong> Viral campaigns & wider exposure</p>
+  </div>
+</section>
+
+<section>
+  <h2>Risk Disclaimer</h2>
+  <div class="card">
+    <p>$Leconom is a meme token with no intrinsic utility. Price is driven by market sentiment and community activity.</p>
+    <ul>
+      <li>High volatility</li>
+      <li>No guaranteed returns</li>
+      <li>Possible total loss</li>
+    </ul>
+    <p>This is not financial advice. Always do your own research (DYOR).</p>
+  </div>
+</section>
+
+<section>
+  <h2>Join The Movement</h2>
+  <div class="card">
+    <p>This is not just a token. It is a narrative of economic reality in digital form.</p>
+    <p>Enter early. Stay aware. Be prepared.</p>
+  </div>
+</section>
+
+</div>
+
 <footer>
-  <p>© 2026 $Leconom | Built in crisis</p>
+  <p>© 2026 $Leconom | Global Economic Crisis</p>
 </footer>
 
 </body>
